@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Feedback Form </title>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid bg-primary py-3 d-none d-md-block"></div>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
+                <a href="Home.html" class="navbar-brand d-block d-lg-none">
+                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">SPAR</span>KLE</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="HomePage.html" class="nav-item nav-link">Home</a>
+                        <a href="AboutUs.html" class="nav-item nav-link">About</a>
+                        <a href="4. Menu Page.html" class="nav-item nav-link">Menu</a>
+                    </div>
+                    <a href="HomePage.html" class="navbar-brand mx-5 d-none d-lg-block">
+                        <h1 class="m-0 display-4 text-primary"><span class="text-secondary">SPAR</span>KLE</h1>
+                    </a>
+                    <div class="navbar-nav mr-auto py-0">
+                        <a href="OrderPage.html" class="nav-item nav-link">Order Now</a>
+                        <a href="6. Feedback Form.html" class="nav-item nav-link">Feedback</a>
+                        <a href="Contact Us.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Feedback Form Start -->
+    <div class="container-fluid py-4">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="contact-form bg-light rounded p-3">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row"></div>
+                            
+                            <h4 class="position-relative text-center">Your feedback is important to us! :)</h4>
+                            <div class="position-relative text-center mb-5 small">
+                                Please answer the form below:
+                            </div>
+                            <div class="position-relative text-center">
+                                <label><b>How do you rate your overall experience?</b></label>
+                            </div>
+            
+                            <div class="mb-5 d-flex justify-content-center flex-row py-1">
+                                <div class="form-check mr-3">
+                                    <input class="form-check-input" type="radio" name="rating" id="rating_poor" value="poor">
+                                    <label class="form-check-label" for="rating_poor">
+                                        Poor
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check mr-3">
+                                    <input class="form-check-input" type="radio" name="rating" id="rating_average" value="average">
+                                    <label class="form-check-label" for="rating_average">
+                                        Average
+                                    </label>
+                                </div>
+            
+                                <div class="form-check mr-3">
+                                    <input class="form-check-input" type="radio" name="rating" id="rating_good" value="good">
+                                    <label class="form-check-label" for="rating_good">
+                                        Good
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check mx-3">
+                                    <input class="form-check-input" type="radio" name="rating" id="rating_verygood" value="verygood">
+                                    <label class="form-check-label" for="rating_verygood">
+                                        Very Good
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check mx-3">
+                                    <input class="form-check-input"  type="radio" name="rating" id="rating_excellent" value="excellent">
+                                    <label class="form-check-label" for="rating_excellent">
+                                        Excellent!
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label"  for="feedback_like">What did you like about us:</label>
+                                <textarea class="form-control" required rows="1" name="comments" id="feedback_like" ></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label"  for="feedback_visited">How often have you visited us:</label>
+                                <textarea class="form-control" required rows="1" name="comments" id="feedback_visited" required="required"></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label"  for="feedback_hear">How did you hear about us:</label>
+                                <textarea class="form-control" required rows="1" name="comments" id="feedback_hear" required="required"></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label"  for="feedback_better">Could your experience have been better?:</label>
+                                <textarea class="form-control" required rows="1" name="comments" id="feedback_better" required="required"></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label"  for="feedback_how">If yes how?:</label>
+                                <textarea class="form-control" required rows="1" name="comments" id="feedback_how" required="required"></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label"  for="feedback_comments">Comments:</label>
+                                <textarea class="form-control" required rows="3" name="comments" id="feedback_comments" required="required"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="form-label" for="feedback_name">Full Name:</label>
+                                    <input type="text" required name="name" class="form-control" id="feedback_name" required="required"/>
+                                </div>
+                                <div class="col mb-4">
+                                    <label class="form-label" for="feedback_email">Email Address:</label>
+                                    <input type="email" name="email" required class="form-control" id="feedback_email" required="required"/>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-block py-3 px-5" type="submit" id="Post">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-light py-3" style="margin-top: 50px;">
+        <div class="container text-center py-3">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <a href="index.html" class="navbar-brand m-0">
+                        <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary">SPAR</span>KLE</h1>
+                    </a>
+                </div>
+                <div class="col-12 mb-1">
+                    <a class="btn btn-outline-secondary btn-social mr-2" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-secondary btn-social mr-2" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-secondary btn-social mr-2" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-secondary btn-social" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-12 mt-2 mb-3">
+                    <div class="row">
+                        <div class="col-sm-6 text-center text-sm-right border-right mb-3 mb-sm-0">
+                            <h5 class="font-weight-bold mb-2">Get In Touch</h5>
+                            <p class="mb-2">205 Humber College Blvd</p>
+                            <p class="mb-0">Etobicoke ON M9W 5L7</p>
+                        </div>
+                        <div class="col-sm-6 text-center text-sm-left">
+                            <h5 class="font-weight-bold mb-2">Opening Hours</h5>
+                            <p class="mb-2">Mon – Fri: 9AM – 5PM</p>
+                            <p class="mb-0">+(416) 675-3111</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p class="m-0">&copy; <a href="#">>Group 9 - HTML Course</a>. All Rights Reserved. Designed by <a href="https://htmlcodex.com">HTML Codex.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
